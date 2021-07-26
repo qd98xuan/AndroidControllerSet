@@ -21,13 +21,13 @@ import java.util.List;
  *
  * @description 适配器类，就是listview最常见的适配器写法
  */
-public class NodeTreeAdapter <T> extends BaseAdapter{
+public class NodeTreeAdapter extends BaseAdapter{
 
     //大家经常用ArrayList，但是这里为什么要使用LinkedList
     // ，后面大家会发现因为这个list会随着用户展开、收缩某一项而频繁的进行增加、删除元素操作，
     // 因为ArrayList是数组实现的，频繁的增删性能低下，而LinkedList是链表实现的，对于频繁的增删
     //操作性能要比ArrayList好。
-    private LinkedList<Node<T>> nodeLinkedList;
+    private LinkedList<Node> nodeLinkedList;
     private LayoutInflater inflater;
     private int retract;//缩进值
     private Context context;
@@ -36,7 +36,7 @@ public class NodeTreeAdapter <T> extends BaseAdapter{
     private int itemTextColor = R.color.black;//选项的字体颜色
 
 
-    public NodeTreeAdapter(Context context, ListView listView, LinkedList<Node<T>> linkedList, OnTreeClickCallback onTreeClickCallback){
+    public NodeTreeAdapter(Context context, ListView listView, LinkedList<Node> linkedList, OnTreeClickCallback onTreeClickCallback){
         inflater = LayoutInflater.from(context);
         this.context = context;
         nodeLinkedList = linkedList;

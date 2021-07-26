@@ -10,3 +10,7 @@ rootProject.name = "AndroidControllerSet"
 include ':app'
 include ':recyclerviewpaging'
 include ':composeview'
+include ':amapcontroller'
+include ':composelistview'
+include ':treeView'
+include ':testtreenode'

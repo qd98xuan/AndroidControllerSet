@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="amapcontroller/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="recyclerviewpaging/src/main/res/layout/activity_main.xml" value="0.20878623188405798" />
+        <entry key="testtreenode/src/main/res/layout/activity_main.xml" value="0.4540282053834088" />
+        <entry key="treeView/src/main/res/layout/select_dept_layout.xml" value="0.16869300911854104" />
+        <entry key="treeView/src/main/res/layout/tree_listview_item.xml" value="0.346875" />
       </map>
     </option>
   </component>

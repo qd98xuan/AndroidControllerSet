@@ -10,9 +10,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/amapcontroller" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/composelistview" />
             <option value="$PROJECT_DIR$/composeview" />
             <option value="$PROJECT_DIR$/recyclerviewpaging" />
+            <option value="$PROJECT_DIR$/testtreenode" />
+            <option value="$PROJECT_DIR$/treeView" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

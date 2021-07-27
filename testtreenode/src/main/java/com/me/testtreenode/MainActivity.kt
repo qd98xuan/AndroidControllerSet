@@ -11,21 +11,22 @@ import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
     lateinit var treeView:ListView
-    lateinit var linkedList:LinkedList<Node<Dept>>
-    var dataList = ArrayList<Node<Dept>>()
+    lateinit var linkedList:LinkedList<Node<*>>
+    var dataList = ArrayList<Node<*>>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         treeView = findViewById(R.id.tree)
-        var nodeTreeAdapter = NodeTreeAdapter(this,treeView,linkedList,object :OnTreeClickCallback{
+        linkedList = LinkedList()
+        dataList.add(Dept("1","0","A"))
+        dataList.add(Dept("2","1","B"))
+        dataList.add(Dept("3","2","C"))
+        linkedList.addAll(NodeHelper.sortNodes(dataList)!!)
+        val nodeTreeAdapter = NodeTreeAdapter(this,treeView,linkedList,object : OnTreeClickCallback{
             override fun onItemClickListener(id: String?, parentId: String?) {
-                Toast.makeText(this@MainActivity,id+","+parentId,Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivity,id,Toast.LENGTH_LONG).show()
             }
         })
-        initData()
-    }
-
-    private fun initData() {
-        linkedList.addAll(NodeHelper.sortNodes(dataList))
+        treeView.adapter = nodeTreeAdapter
     }
 }

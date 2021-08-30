@@ -12,9 +12,14 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/amapcontroller" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/composelistview" />
-            <option value="$PROJECT_DIR$/composeview" />
+            <option value="$PROJECT_DIR$/base_module" />
+            <option value="$PROJECT_DIR$/compose_animation_module" />
+            <option value="$PROJECT_DIR$/composelist" />
+            <option value="$PROJECT_DIR$/list_module" />
+            <option value="$PROJECT_DIR$/loginmodel" />
+            <option value="$PROJECT_DIR$/moveboxmodel" />
             <option value="$PROJECT_DIR$/recyclerviewpaging" />
+            <option value="$PROJECT_DIR$/testlistmodule" />
             <option value="$PROJECT_DIR$/testtreenode" />
             <option value="$PROJECT_DIR$/treeView" />
           </set>

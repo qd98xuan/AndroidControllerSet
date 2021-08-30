@@ -4,13 +4,19 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
+        maven { url 'https://jitpack.io' }
     }
 }
 rootProject.name = "AndroidControllerSet"
 include ':app'
 include ':recyclerviewpaging'
-include ':composeview'
 include ':amapcontroller'
-include ':composelistview'
 include ':treeView'
 include ':testtreenode'
+include ':composelist'
+include ':moveboxmodel'
+include ':loginmodel'
+include ':base_module'
+include ':compose_animation_module'
+include ':list_module'
+include ':testlistmodule'
